@@ -111,13 +111,13 @@ Random initialization helps:
 
 The prediction equation used is:
 
-[
-\hat{y} = wx + b
-]
+
+y_hat = wx + b
+
 
 Where:
 
-* ( \hat{y} ) = predicted value
+* y_hat = predicted value
 * ( w ) = weight (slope)
 * ( x ) = input feature
 * ( b ) = bias/intercept
@@ -137,7 +137,7 @@ L = \frac{1}{2n} \sum (y - \hat{y})^2
 Where:
 
 * ( y ) = actual value
-* ( \hat{y} ) = predicted value
+* ( y_hat ) = predicted value
 * ( n ) = number of samples
 
 ---
@@ -161,9 +161,7 @@ The model learns by minimizing the loss function using Gradient Descent.
 
 ## Weight Gradient
 
-[
-\frac{\partial L}{\partial w} = -\frac{1}{n}\sum (y-\hat{y})x
-]
+∂w/∂L​=−(1/n)​∑(y−y_hat​)x
 
 This determines how the weight should change to reduce error.
 
@@ -171,9 +169,7 @@ This determines how the weight should change to reduce error.
 
 ## Bias Gradient
 
-[
-\frac{\partial L}{\partial b} = -\frac{1}{n}\sum (y-\hat{y})
-]
+∂b/∂L​=−(1/n)∑(y−y_hat​)
 
 This determines how the bias should change.
 
@@ -185,19 +181,15 @@ The parameters are updated iteratively:
 
 ## Weight Update
 
-[
-w = w + \eta \cdot \frac{1}{n}\sum (y-\hat{y})x
-]
+w = w+η⋅(1/n)​∑(y−y_hat​)x
 
 ## Bias Update
 
-[
-b = b + \eta \cdot \frac{1}{n}\sum (y-\hat{y})
-]
+b = b +η⋅(1/n)​∑(y−y^​)x
 
 Where:
 
-* ( \eta ) = learning rate
+* ( η(neta) ) = learning rate
 
 ---
 
@@ -233,9 +225,9 @@ Randomly initialize:
 
 Use:
 
-[
-\hat{y} = wx + b
-]
+
+y_hat = wx + b
+
 
 to predict outputs.
 
@@ -243,9 +235,9 @@ to predict outputs.
 
 ## Step 3: Calculate Error
 
-[
-error = y - \hat{y}
-]
+
+error = y - y_hat
+
 
 ---
 
