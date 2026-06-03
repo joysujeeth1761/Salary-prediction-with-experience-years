@@ -130,9 +130,7 @@ This equation represents a straight line.
 
 The project uses **Mean Squared Error (MSE)** as the loss function.
 
-[
-L = \frac{1}{2n} \sum (y - \hat{y})^2
-]
+L = (1/2n)*​∑(y−y_hat​)
 
 Where:
 
